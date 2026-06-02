@@ -2,9 +2,9 @@ import { Clock, MapPin, Navigation, Phone } from "lucide-react";
 import { displayPhone } from "../App.jsx";
 import { motion } from "framer-motion";
 
-const mapUrl = "https://www.google.com/maps?q=Urb%20Portal%20de%20la%20terminal%20Mz%20A%20D%2041H%2074%2066%20Cartagena%20Colombia&output=embed";
-const directionsUrl = "https://www.google.com/maps/dir/?api=1&destination=Urb+Portal+de+la+terminal+Mz+A+D+41H+74+66+Cartagena+Colombia";
+const mapUrl = "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3923.5!2d-75.4587212!3d10.4023693!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8ef625ad4b64b787%3A0xe3c27c2d4b5c25cf!2sCDA+LA+CORDIALIDAD!5e0!3m2!1ses!2sco!4v1";
 
+const directionsUrl = "https://www.google.com/maps/dir/?api=1&destination=10.4023693,-75.4587212";
 export default function Location() {
   return (
     <section id="contacto" className="relative overflow-hidden w-full bg-[#080808] border-t border-white/[0.06]">
