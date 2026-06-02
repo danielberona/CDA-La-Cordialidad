@@ -7,7 +7,7 @@ import cdaImage4 from "../assets/imagencda4.JPG";
 import cdaImage5 from "../assets/imagencda5.JPG";
 import cdaImage6 from "../assets/imagencda6.JPG";
 import cdaImage9 from "../assets/imagencda9.PNG";
-import cdaImage9 from "../assets/imagencda10.JPEG";
+import cdaImage9 from "../assets/imagencda10.jpeg";
 
 
 const itemsRow1 = [
