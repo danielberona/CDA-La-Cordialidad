@@ -7,10 +7,12 @@ import cdaImage4 from "../assets/imagencda4.JPG";
 import cdaImage5 from "../assets/imagencda5.JPG";
 import cdaImage6 from "../assets/imagencda6.JPG";
 import cdaImage9 from "../assets/imagencda9.PNG";
+import cdaImage9 from "../assets/imagencda10.JPEG";
+
 
 const itemsRow1 = [
   { title: "CDA La Cordialidad", src: cdaMain },
-  { title: "Instalaciones", src: cdaImage1 },
+  { title: "Instalaciones", src: cdaImage10 },
   { title: "Líneas de revisión", src: cdaImage6 },
 ];
 
@@ -22,7 +24,7 @@ const itemsRow2 = [
 
 const allItems = [
   { title: "CDA La Cordialidad", src: cdaMain },
-  { title: "Instalaciones", src: cdaImage1 },
+  { title: "Instalaciones", src: cdaImage10 },
   { title: "Líneas de revisión", src: cdaImage6 },
   { title: "Diagnóstico preventivo", src: cdaImage4, span: "lg:col-span-5" },
   { title: "Vehículos en revisión", src: cdaImage9, span: "lg:col-span-7" },
