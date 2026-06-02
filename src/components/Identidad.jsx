@@ -231,10 +231,10 @@ export default function Identidad() {
           className="mt-12 grid grid-cols-2 gap-4 md:grid-cols-4"
         >
           {[
-            { value: "ISO 17020", label: "Norma técnica" },
-            { value: "3 clases", label: "Líneas de diagnóstico" },
+            { value: "ISO 17020:2012", label: "Norma técnica" },
+            { value: "CLASE D", label: "Línea mixta y motocicleta" },
             { value: "100%", label: "Técnicos calificados" },
-            { value: "L – D", label: "Disponibilidad total" },
+            { value: "L-D", label: "Disponibilidad total" },
           ].map(({ value, label }, i) => (
             <div
               key={i}

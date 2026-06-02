@@ -16,13 +16,13 @@ export default function Footer() {
             <span className="flex h-12 w-12 items-center justify-center overflow-hidden rounded-lg bg-white shrink-0">
               <img src={logoCda} alt="Logo CDA La Cordialidad" className="h-full w-full object-contain p-1" />
             </span>
-            <div>
-              <strong className="font-display block text-lg text-white uppercase tracking-wider">CDA La Cordialidad</strong>
+            <div className="min-w-0">
+              <strong className="font-display block whitespace-nowrap text-[17px] text-white uppercase tracking-[-0.06em] leading-none">CDA La Cordialidad</strong>
               <span className="text-[10px] font-bold uppercase tracking-widest text-[#FACC15]">Centro de Diagnóstico Automotor</span>
             </div>
           </div>
           <p className="mt-5 max-w-sm text-xs leading-6 text-white/50 font-light">
-            Infraestructura técnica homologada, personal altamente capacitado y procesos eficientes para garantizar la seguridad de tu vehículo en la vía.
+            Centro de Diagnóstico Automotor acreditado por ONAC, con infraestructura técnica, personal capacitado y procesos eficientes para la seguridad de tu vehículo en la vía.
           </p>
           
           {/* Social Icons (Squared boxes for industrial tech aesthetic) */}
@@ -59,7 +59,8 @@ export default function Footer() {
         {/* Links Column 2 */}
         <FooterLinks title="Servicios" links={[
           ["SOAT", "#servicios"],
-          ["Revisión técnico mecánica", "#servicios"],
+          ["Revisión técnico mecánica y emisiones", "#servicios"],
+          ["Motocicletas 4T", "#servicios"],
           ["Diagnóstico preventivo", "#servicios"],
           ["Vehículos livianos", "#servicios"],
           ["Vehículos pesados", "#servicios"],
@@ -71,7 +72,7 @@ export default function Footer() {
           <div className="space-y-4 text-xs text-white/50 leading-relaxed font-light">
             <p className="flex items-start gap-2">
               <MapPin className="text-[#FACC15] shrink-0" size={16} />
-              <span>Cartagena, Transversal 54 #74-66</span>
+              <span>Urb Portal de la terminal Mz A D 41H 74 66</span>
             </p>
             <p className="flex items-center gap-2">
               <Phone className="text-[#FACC15] shrink-0" size={16} />

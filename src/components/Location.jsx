@@ -2,8 +2,8 @@ import { Clock, MapPin, Navigation, Phone } from "lucide-react";
 import { displayPhone } from "../App.jsx";
 import { motion } from "framer-motion";
 
-const mapUrl = "https://www.google.com/maps?q=Transversal%2054%20%2374-66%20Cartagena%20Colombia&output=embed";
-const directionsUrl = "https://www.google.com/maps/dir/?api=1&destination=Transversal+54+%2374-66+Cartagena+Colombia";
+const mapUrl = "https://www.google.com/maps?q=Urb%20Portal%20de%20la%20terminal%20Mz%20A%20D%2041H%2074%2066%20Cartagena%20Colombia&output=embed";
+const directionsUrl = "https://www.google.com/maps/dir/?api=1&destination=Urb+Portal+de+la+terminal+Mz+A+D+41H+74+66+Cartagena+Colombia";
 
 export default function Location() {
   return (
@@ -43,7 +43,7 @@ export default function Location() {
                 </span>
                 <div>
                   <strong className="block text-xs font-black uppercase tracking-wider text-white">Dirección</strong>
-                  <span className="mt-1 block text-sm text-white/50">Cartagena, Transversal 54 #74-66</span>
+                  <span className="mt-1 block text-sm text-white/50">Urb Portal de la terminal Mz A D 41H 74 66</span>
                 </div>
               </div>
 

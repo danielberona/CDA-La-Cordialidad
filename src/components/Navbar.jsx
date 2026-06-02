@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import { CalendarCheck, Menu, X, ArrowUpRight } from "lucide-react";
+import { MessageCircle, Menu, X, ArrowUpRight } from "lucide-react";
 import { motion, AnimatePresence } from "framer-motion";
 import logoCda from "../assets/logocda.PNG";
 import { whatsappUrl } from "../App.jsx";
@@ -82,7 +82,7 @@ export default function Navbar() {
           {/* Logo brand */}
           <a
             href="#inicio"
-            className="group flex items-center gap-3 no-underline"
+            className="group flex items-center gap-2 no-underline"
             aria-label="CDA La Cordialidad"
           >
             <span
@@ -95,13 +95,13 @@ export default function Navbar() {
                 className="h-full w-full object-contain p-[2px]"
               />
             </span>
-            <span className="leading-none">
+            <span className="min-w-0 leading-none">
               <span
-                className="block text-base font-black tracking-tighter text-white sm:text-lg uppercase font-display"
+                className="block whitespace-nowrap text-[13px] font-black tracking-[-0.08em] text-white sm:text-[15px] uppercase font-display"
               >
                 CDA La Cordialidad
               </span>
-              <span className="block text-[9px] font-bold uppercase tracking-[0.15em] text-[#FACC15]/85">
+              <span className="mt-0.5 block text-[8px] font-bold uppercase tracking-[0.11em] text-[#FACC15]/85">
                 Centro de Diagnóstico Automotor
               </span>
             </span>
@@ -128,8 +128,8 @@ export default function Navbar() {
             className="group hidden items-center gap-2 rounded-lg bg-[#FACC15] px-6 py-3 text-xs font-black tracking-widest text-[#0F0F0F] transition-all duration-200
                        hover:bg-yellow-300 active:scale-[0.97] lg:inline-flex no-underline uppercase"
           >
-            <CalendarCheck size={14} />
-            Agenda tu cita
+            <MessageCircle size={14} />
+            Contáctanos
             <ArrowUpRight
               size={13}
               className="transition-transform duration-200 group-hover:translate-x-[2px] group-hover:-translate-y-[2px]"
@@ -199,7 +199,7 @@ export default function Navbar() {
               <a
                 href="#inicio"
                 onClick={() => setOpen(false)}
-                className="flex items-center gap-3 no-underline"
+                className="flex items-center gap-2 no-underline"
               >
                 <span className="flex h-10 w-10 items-center justify-center overflow-hidden rounded-lg bg-white">
                   <img
@@ -208,10 +208,15 @@ export default function Navbar() {
                     className="h-full w-full object-contain p-[2px]"
                   />
                 </span>
-                <span
-                  className="text-base font-black tracking-tighter text-white uppercase font-display"
-                >
-                  CDA La Cordialidad
+                <span className="min-w-0 leading-none">
+                  <span
+                    className="block whitespace-nowrap text-[13px] font-black tracking-[-0.08em] text-white uppercase font-display"
+                  >
+                    CDA La Cordialidad
+                  </span>
+                  <span className="mt-0.5 block text-[8px] font-bold uppercase tracking-[0.11em] text-[#FACC15]/85">
+                    Centro de Diagnóstico Automotor
+                  </span>
                 </span>
               </a>
               <button
@@ -263,14 +268,14 @@ export default function Navbar() {
                 onClick={() => setOpen(false)}
                 className="mt-8 flex items-center justify-center gap-2 rounded-lg bg-[#FACC15] px-6 py-4 text-sm font-black tracking-widest text-[#0F0F0F] active:scale-[0.97] no-underline uppercase"
               >
-                <CalendarCheck size={16} />
-                Agenda tu cita
+                <MessageCircle size={16} />
+                Contáctanos
               </motion.a>
             </nav>
 
             <div className="relative z-10 px-8 pb-8 pt-4">
               <p className="text-[10px] font-bold uppercase tracking-[0.2em] text-white/30">
-                Cartagena, Colombia · Transversal 54 #74-66
+                Cartagena, Colombia · Urb Portal de la terminal Mz A D 41H 74 66
               </p>
             </div>
           </motion.div>

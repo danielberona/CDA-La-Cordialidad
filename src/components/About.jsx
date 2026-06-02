@@ -8,8 +8,8 @@ const benefits = [
   [Timer,       "Atención rápida",       "Flujo de revisión optimizado para reducir tiempos de espera."],
   [Award,       "Técnicos certificados", "Equipo capacitado para revisión, diagnóstico y asesoría."],
   [Cpu,         "Tecnología moderna",    "Equipos de medición y diagnóstico para resultados confiables."],
-  [Wrench,      "Equipos especializados","Infraestructura preparada para vehículos livianos y pesados."],
-  [MapPinned,   "Excelente ubicación",   "Cartagena, Transversal 54 #74-66, con acceso conveniente."],
+  [Wrench,      "Equipos especializados","Infraestructura preparada para vehículos livianos, pesados y motocicleta 4T."],
+  [MapPinned,   "Excelente ubicación",   "Cerca a la Terminal de Transporte, con acceso rápido y conveniente."],
   [CalendarDays,"Lunes a domingo",       "Horario amplio incluyendo domingos y festivos."],
 ];
 
@@ -105,10 +105,10 @@ export default function About() {
                   className="block text-sm font-black text-[#0F0F0F]"
                   style={{ fontFamily: "'Archivo Black', sans-serif" }}
                 >
-                  Certificación
+                  Acreditación ONAC
                 </strong>
                 <span className="text-xs font-bold text-[#0F0F0F]/80">
-                  Servicio garantizado
+                  Servicio certificado
                 </span>
               </span>
             </div>
@@ -152,8 +152,7 @@ export default function About() {
             transition={{ duration: 0.5, delay: 0.14, ease: [0.23, 1, 0.32, 1] }}
             className="mt-5 text-sm leading-7 text-zinc-500 max-w-lg"
           >
-            CDA La Cordialidad combina procesos ágiles, personal certificado y una experiencia de
-            atención clara para que cada conductor salga con seguridad.
+            CDA La Cordialidad combina procesos ágiles, personal certificado, equipos especializados y una experiencia de atención clara para que cada conductor salga con seguridad.
           </motion.p>
 
           {/* thin yellow divider */}

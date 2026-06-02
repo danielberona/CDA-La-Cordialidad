@@ -5,16 +5,16 @@ import { whatsappUrl } from "../App.jsx";
 import { fadeUp, staggerFast } from "./Motion.jsx";
 
 const stats = [
-  ["+4000", "clientes atendidos"],
-  ["Línea", "livianos y pesados"],
-  ["Certificación", "vigente de calidad"],
+  ["+1500", "Clientes atendidos por mes"],
+  ["Línea", "Moto 4T, livianos y pesados"],
+  ["Certificación", "18-OIN-051 vigente"],
   ["Atención", "ágil y sin esperas"],
 ];
 
 const highlights = [
-  [BadgeCheck, "Proceso certificado", "Inspección técnica rigurosa con acompañamiento profesional y claro."],
-  [Car, "Cobertura completa", "Equipamiento premium listo para vehículos livianos, pesados y motos."],
-  [Gauge, "Flujo de revisión rápido", "Sistemas optimizados para minimizar tus tiempos de espera."],
+  [BadgeCheck, "INSPECCIÓN TÉCNICA CERTIFICADA", "Garantizamos procesos ajustados a la normatividad aplicable y estándares de calidad."],
+  [Car, "TECNOLOGÍA Y EQUIPAMIENTO", "Contamos con Tecnología y equipos de última generación para una inspección precisa y confiable."],
+  [Gauge, "FLUJO DE REVISIÓN RÁPIDA", "Procesos ágiles y eficientes para brindarte una atención rápida."],
 ];
 
 export default function Hero() {
@@ -40,7 +40,7 @@ export default function Hero() {
             className="inline-flex items-center gap-2 border border-brand-yellow/30 bg-brand-yellow/[0.06] px-3.5 py-1.5 text-[10px] font-black uppercase tracking-[0.16em] text-brand-yellow"
           >
             <ShieldCheck size={14} className="stroke-[2.5]" />
-            CDA Certificado
+            CDA ACREDITADO POR ONAC
           </motion.div>
 
           {/* Headline */}
@@ -48,7 +48,7 @@ export default function Hero() {
             variants={fadeUp}
             className="font-display mt-6 max-w-2xl text-5xl font-black leading-[0.9] text-white sm:text-6xl xl:text-7xl uppercase"
           >
-            Tecnología &amp; Seguridad para tu Vehículo
+            COMPROMETIDOS POR TU SEGURIDAD Y LA DEL MEDIO AMBIENTE
           </motion.h1>
 
           {/* Subtext */}
@@ -56,8 +56,8 @@ export default function Hero() {
             variants={fadeUp}
             className="mt-6 max-w-xl text-base leading-7 text-white/60 font-light"
           >
-            Especialistas en revisión técnico-mecánica y de emisiones contaminantes en Cartagena.
-            Contamos con personal altamente calificado y tecnología de vanguardia para garantizar un proceso ágil, transparente y confiable.
+            Especialistas en revisión técnico mecánica y de emisiones contaminantes en Cartagena.
+            Contamos con personal altamente calificado, equipos de última generación y procesos certificados para motocicletas, vehículos livianos y pesados.
           </motion.p>
 
           {/* CTAs */}
@@ -66,7 +66,7 @@ export default function Hero() {
             className="mt-8 flex flex-wrap gap-4"
           >
             <a href={whatsappUrl} target="_blank" rel="noreferrer" className="btn-primary uppercase text-xs tracking-widest">
-              Agendar por WhatsApp
+              Cotiza por WhatsApp
               <ArrowRight size={14} />
             </a>
             <a href="#servicios" className="btn-dark uppercase text-xs tracking-widest">

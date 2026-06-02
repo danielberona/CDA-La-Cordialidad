@@ -1,14 +1,15 @@
-import { Car, ClipboardCheck, Headphones, ScanLine, ShieldCheck, Truck } from "lucide-react";
+import { Car, ClipboardCheck, Headphones, ScanLine, ShieldCheck, Truck, Bike } from "lucide-react";
 import { motion, useInView } from "framer-motion";
 import { useRef } from "react";
 
 /* ─── data ────────────────────────────────────────────────────────────────── */
 const services = [
-  [ShieldCheck,      "SOAT",                    "Tramitación rápida del Seguro Obligatorio de Accidentes de Tránsito con acompañamiento claro."],
-  [ClipboardCheck,   "Revisión Técnico Mecánica","Proceso certificado para circular con tranquilidad y cumplir la normativa colombiana."],
-  [ScanLine,         "Diagnóstico Preventivo",   "Detección temprana de fallas antes de que se conviertan en reparaciones costosas."],
-  [Car,              "Vehículos Livianos",        "Atención especializada para autos particulares, camperos y vehículos de uso diario."],
-  [Truck,            "Vehículos Pesados",         "Revisión para camiones, buses y vehículos de carga con equipos especializados."],
+  [ClipboardCheck,   "Revisión técnico mecánica y emisiones contaminantes", "Proceso certificado para circular con tranquilidad y cumplir la normativa colombiana."],
+  [ShieldCheck,      "SOAT",                      "Expedición y asesoría para tu Seguro Obligatorio de Accidentes de Tránsito (SOAT), de manera rápida y segura."],
+  [Bike,             "Motocicletas",              "Revisiones para motocicleta 4T."],
+  [Car,              "Vehículos Livianos",        "Revisión para vehículos particulares, camperos y camionetas, con todo tipo de combustible y/o eléctricos."],
+  [Truck,            "Vehículos Pesados",         "Revisión para camiones, volquetas, tractocamiones, buses, busetas, microbuses, entre otros."],
+  [ScanLine,         "Diagnóstico Preventivo",    "Detección temprana de fallas antes de que se conviertan en reparaciones costosas."],
   [Headphones,       "Asesoría Técnica",          "Orientación experta para resolver dudas sobre el estado y documentación del vehículo."],
 ];
 
@@ -31,20 +32,23 @@ const cardVariants = {
 
 /* ─── bento layout config ─────────────────────────────────────────────────── */
 // Each entry: [colSpan-class-md, colSpan-class-xl]
-// Row 1: SOAT (wide) | RTM (normal) | Diagnóstico (normal)
-// Row 2: Livianos (normal) | Pesados (wide) | Asesoría (normal)
+// Row 1: RTM (wide) | SOAT (normal)
+// Row 2: Motocicletas (normal) | Livianos (normal) | Pesados (normal)
+// Row 3: Diagnóstico (normal) | Asesoría (wide)
 const spanConfig = [
-  "md:col-span-2 xl:col-span-2",   // SOAT — large
-  "md:col-span-1 xl:col-span-1",   // RTM
-  "md:col-span-1 xl:col-span-1",   // Diagnóstico
+  "md:col-span-2 xl:col-span-2",   // RTM — large
+  "md:col-span-1 xl:col-span-1",   // SOAT
+  "md:col-span-1 xl:col-span-1",   // Motocicletas
   "md:col-span-1 xl:col-span-1",   // Livianos
-  "md:col-span-2 xl:col-span-2",   // Pesados — large
-  "md:col-span-1 xl:col-span-1",   // Asesoría
+  "md:col-span-1 xl:col-span-1",   // Pesados
+  "md:col-span-1 xl:col-span-1",   // Diagnóstico
+  "md:col-span-2 xl:col-span-2",   // Asesoría — large
 ];
 
 /* ─── single card ─────────────────────────────────────────────────────────── */
 function ServiceCard({ Icon, title, text, span, index }) {
   const isWide = span.includes("col-span-2");
+  const isPrimary = index === 0;
 
   return (
     <motion.article
@@ -52,8 +56,8 @@ function ServiceCard({ Icon, title, text, span, index }) {
       whileHover="hovered"
       initial="rest"
       animate="rest"
-      className={`group relative flex flex-col overflow-hidden border border-white/[0.07] bg-[#111] p-7 ${span} transition-colors duration-300 hover:border-[#FACC15]/50`}
-      style={{ minHeight: isWide ? "260px" : "220px" }}
+      className={`group relative flex flex-col overflow-hidden border ${isPrimary ? "border-[#FACC15]/45 bg-[#14120a]" : "border-white/[0.07] bg-[#111]"} p-7 ${span} transition-colors duration-300 hover:border-[#FACC15]/50`}
+      style={{ minHeight: isPrimary ? "300px" : isWide ? "260px" : "220px" }}
     >
       {/* animated yellow top bar */}
       <motion.div
@@ -74,10 +78,10 @@ function ServiceCard({ Icon, title, text, span, index }) {
 
       {/* title */}
       <h3
-        className="font-black text-white leading-tight"
+        className="font-black text-white leading-tight text-balance"
         style={{
           fontFamily: "'Archivo Black', sans-serif",
-          fontSize: isWide ? "1.5rem" : "1.2rem",
+          fontSize: isPrimary ? "1.65rem" : isWide ? "1.5rem" : "1.2rem",
         }}
       >
         {title}
@@ -126,7 +130,7 @@ export default function Services() {
           userSelect: "none",
         }}
       >
-        06
+        07
       </span>
 
       <div className="relative mx-auto max-w-7xl px-6 py-24 lg:px-12 lg:py-32">
@@ -150,13 +154,12 @@ export default function Services() {
               letterSpacing: "-0.02em",
             }}
           >
-            Soluciones automotrices<br />
-            con precisión técnica
+          Revisión técnico mecánica,<br />
+          emisiones y SOAT
           </h2>
 
           <p className="mt-5 text-base leading-7 text-white/55 max-w-xl">
-            Un ecosistema de servicios pensado para ahorrar tiempo, reducir riesgos y mantener tu
-            vehículo listo para la vía.
+            Servicios para motocicleta 4T, vehículos livianos, camionetas y vehículos pesados, con orientación clara para cada trámite.
           </p>
         </motion.div>
 

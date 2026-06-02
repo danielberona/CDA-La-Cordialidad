@@ -8,7 +8,7 @@ export default function WhatsAppButton() {
       href={whatsappUrl}
       target="_blank"
       rel="noreferrer"
-      aria-label="Agendar por WhatsApp"
+      aria-label="Escríbenos por WhatsApp"
       initial={{ scale: 0, opacity: 0 }}
       animate={{ scale: 1, opacity: 1 }}
       transition={{ delay: 0.8, type: "spring", stiffness: 260, damping: 20 }}

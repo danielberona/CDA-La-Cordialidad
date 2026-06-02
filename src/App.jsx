@@ -13,7 +13,7 @@ import WhatsAppButton from "./components/WhatsAppButton.jsx";
 export const phone = "3003935597";
 export const displayPhone = "300 393 5597";
 export const whatsappUrl = `https://wa.me/57${phone}?text=${encodeURIComponent(
-  "Hola, quiero agendar una cita en CDA La Cordialidad",
+  "Hola, quiero cotizar mi revisión técnico mecánica, emisiones contaminantes o SOAT en CDA La Cordialidad",
 )}`;
 
 export default function App() {
