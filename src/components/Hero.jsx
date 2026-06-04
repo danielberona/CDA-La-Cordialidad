@@ -19,7 +19,7 @@ const highlights = [
 
 export default function Hero() {
   return (
-    <section id="inicio" className="relative min-h-[100dvh] overflow-hidden bg-[#080808] flex flex-col justify-between pt-24">
+    <section id="inicio" className="relative min-h-[100dvh] overflow-visible bg-[#080808] flex flex-col justify-between pt-16 lg:pt-32">
       {/* Decorative background grid and ambient glows */}
       <div className="pointer-events-none absolute inset-0 grid-pattern opacity-[0.06] z-0" />
       <div className="glow-yellow top-[-10%] left-[-10%] w-[500px] h-[500px]" />
@@ -113,7 +113,7 @@ export default function Hero() {
             <img
               src={heroImage}
               alt="Instalaciones del CDA La Cordialidad"
-              className="h-full w-full object-cover object-center brightness-[0.85] contrast-[1.05]"
+              className="h-full w-full object-cover object-center brightness-[0.85] contrast-[1.05] hero-img"
             />
             {/* Linear dark gradient overlay over image */}
             <div className="absolute inset-0 bg-gradient-to-r from-[#080808] via-transparent to-transparent opacity-90" />

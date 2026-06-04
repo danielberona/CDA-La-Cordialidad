@@ -166,3 +166,6 @@ body {
     transition-duration: 0.01ms !important;
   }
 }
+#inicio {
+  scroll-margin-top: 80px; /* compensate fixed navbar height */
+}
