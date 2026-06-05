@@ -18,7 +18,7 @@ export const whatsappUrl = `https://wa.me/57${phone}?text=${encodeURIComponent(
 
 export default function App() {
   return (
-    <div className="relative min-h-screen lg:min-h-[100dvh] overflow-x-hidden overflow-y-auto bg-[#080808] flex flex-col justify-between pt-24 text-white">
+    <div className="relative min-h-screen lg:min-h-[100dvh] overflow-x-hidden overflow-y-auto bg-[#080808] flex flex-col justify-between pt-0 lg:pt-24 text-white">
       <Navbar />
       <main>
         <Hero />

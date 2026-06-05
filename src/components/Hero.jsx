@@ -19,13 +19,13 @@ const highlights = [
 
 export default function Hero() {
   return (
-    <section id="inicio" className="relative min-h-[100dvh] overflow-visible bg-[#080808] flex flex-col justify-between pt-16 lg:pt-32">
+    <section id="inicio" className="relative min-h-[100dvh] overflow-visible bg-[#080808] flex flex-col justify-between pt-14 lg:pt-32">
       {/* Decorative background grid and ambient glows */}
       <div className="pointer-events-none absolute inset-0 grid-pattern opacity-[0.06] z-0" />
       <div className="glow-yellow top-[-10%] left-[-10%] w-[500px] h-[500px]" />
       <div className="glow-yellow bottom-[20%] right-[-5%] w-[400px] h-[400px]" />
 
-      <div className="container-page relative z-10 grid flex-1 items-center gap-12 py-10 lg:grid-cols-[1.1fr_0.9fr] lg:py-16">
+      <div className="container-page relative z-10 grid flex-1 items-center gap-6 py-3 lg:gap-12 lg:grid-cols-[1.1fr_0.9fr] lg:py-16">
         
         {/* Left Column: Content */}
         <motion.div 
@@ -46,7 +46,7 @@ export default function Hero() {
           {/* Headline */}
           <motion.h1 
             variants={fadeUp}
-            className="font-display mt-6 max-w-2xl text-5xl font-black leading-[0.9] text-white sm:text-6xl xl:text-7xl uppercase"
+            className="font-display mt-3 max-w-2xl text-4xl break-words font-black leading-[0.9] text-white sm:mt-6 sm:text-6xl xl:text-7xl uppercase"
           >
             COMPROMETIDOS POR TU SEGURIDAD Y LA DEL MEDIO AMBIENTE
           </motion.h1>
@@ -54,7 +54,7 @@ export default function Hero() {
           {/* Subtext */}
           <motion.p 
             variants={fadeUp}
-            className="mt-6 max-w-xl text-base leading-7 text-white/60 font-light"
+            className="mt-3 max-w-xl text-sm leading-6 text-white/60 font-light sm:mt-6 sm:text-base sm:leading-7"
           >
             Especialistas en revisión técnico mecánica y de emisiones contaminantes en Cartagena.
             Contamos con personal altamente calificado, equipos de última generación y procesos certificados para motocicletas, vehículos livianos y pesados.
@@ -63,7 +63,7 @@ export default function Hero() {
           {/* CTAs */}
           <motion.div 
             variants={fadeUp}
-            className="mt-8 flex flex-wrap gap-4"
+            className="mt-5 flex flex-wrap gap-3 sm:mt-8 sm:gap-4"
           >
             <a href={whatsappUrl} target="_blank" rel="noreferrer" className="btn-primary uppercase text-xs tracking-widest">
               Cotiza por WhatsApp
@@ -77,7 +77,7 @@ export default function Hero() {
           {/* Highlights (Asymmetric row list instead of standard boxes) */}
           <motion.div 
             variants={staggerFast}
-            className="mt-12 w-full max-w-lg space-y-6"
+            className="mt-6 w-full max-w-lg space-y-3 sm:mt-12 sm:space-y-6"
           >
             {highlights.map(([Icon, title, text]) => (
               <motion.div 
@@ -123,7 +123,7 @@ export default function Hero() {
       </div>
 
       {/* Full-width Stats bar at the bottom */}
-      <div className="relative z-10 w-full border-t border-white/[0.08] bg-[#0c0c0c]/80 backdrop-blur-xl py-6">
+      <div className="relative z-10 w-full border-t border-white/[0.08] bg-[#0c0c0c]/80 backdrop-blur-xl py-4 sm:py-6">
         <div className="container-page grid grid-cols-2 gap-y-4 gap-x-8 sm:grid-cols-4">
           {stats.map(([value, label]) => (
             <div key={`${value}-${label}`} className="flex flex-col justify-center border-r last:border-0 border-white/[0.06] pr-4">
