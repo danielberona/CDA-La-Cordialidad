@@ -124,10 +124,10 @@ export default function Hero() {
 
       {/* Full-width Stats bar at the bottom */}
       <div className="relative z-10 w-full border-t border-white/[0.08] bg-[#0c0c0c]/80 backdrop-blur-xl py-4 sm:py-6">
-        <div className="container-page grid grid-cols-2 gap-y-4 gap-x-8 sm:grid-cols-4">
+        <div className="container-page grid grid-cols-2 gap-y-4 gap-x-4 sm:grid-cols-4 sm:gap-x-8">
           {stats.map(([value, label]) => (
-            <div key={`${value}-${label}`} className="flex flex-col justify-center border-r last:border-0 border-white/[0.06] pr-4">
-              <strong className="text-2xl font-black text-brand-yellow font-display uppercase tracking-tight">{value}</strong>
+            <div key={`${value}-${label}`} className="flex flex-col justify-center overflow-hidden border-r last:border-0 border-white/[0.06] pr-2 sm:pr-4">
+              <strong className="text-lg font-black text-brand-yellow font-display uppercase tracking-tight sm:text-2xl">{value}</strong>
               <span className="mt-1 text-[10px] font-bold uppercase tracking-[0.15em] text-white/40">{label}</span>
             </div>
           ))}
